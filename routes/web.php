@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
+Route::get('/','HomeController@home')->name('home');
+Route::get('/our-service', 'HomeController@service')->name("our-service");
+Route::get('/company', 'HomeController@company')->name("company");
+Route::get('/contact-us', 'HomeController@contact')->name("contact-us");
+
