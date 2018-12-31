@@ -1,15 +1,15 @@
 <?php
 
-namespace App;
+namespace Jobify;
 
 use Illuminate\Database\Eloquent\Model;
 
 class JobPost extends Model
 {
     public function test(){
-        return $this->hasMany('App\Test');
+        return $this->hasMany('Jobify\Test');
     }
     public function company(){
-        return $this->belongsTo('App\Company');
+        return $this->belongsTo('Jobify\Company');
     }
 }

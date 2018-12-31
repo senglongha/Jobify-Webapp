@@ -1,15 +1,15 @@
 <?php
 
-namespace App;
+namespace Jobify;
 
 use Illuminate\Database\Eloquent\Model;
 
 class Student extends Model
 {
     public function test(){
-        return $this->hasMany('App\Test');
+        return $this->hasMany('Jobify\Test');
     }
     public function vc(){
-        return $this->belongsTo('App\Cv');
+        return $this->belongsTo('Jobify\Cv');
     }
 }

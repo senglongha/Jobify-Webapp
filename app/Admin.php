@@ -1,12 +1,12 @@
 <?php
 
-namespace App;
+namespace Jobify;
 
 use Illuminate\Database\Eloquent\Model;
 
 class Admin extends Model
 {
     public function test(){
-        return $this->hasMany('App\Test');
+        return $this->hasMany('Jobify\Test');
     }
 }

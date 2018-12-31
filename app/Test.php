@@ -1,21 +1,21 @@
 <?php
 
-namespace App;
+namespace Jobify;
 
 use Illuminate\Database\Eloquent\Model;
 
 class Test extends Model
 {
     public function admin(){
-        return $this->belongsTo('App\Admin');
+        return $this->belongsTo('Jobify\Admin');
     }
     public function student(){
-        return $this->belongsTo('App\Student');
+        return $this->belongsTo('Jobify\Student');
     }
     public function result(){
-        return $this->belongsTo('App\Results');
+        return $this->belongsTo('Jobify\Results');
     }
     public function jobPost(){
-        return $this->belongsTo('App\JobPosts');
+        return $this->belongsTo('Jobify\JobPosts');
     }
 }

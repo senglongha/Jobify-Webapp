@@ -1,12 +1,12 @@
 <?php
 
-namespace App;
+namespace Jobify;
 
 use Illuminate\Database\Eloquent\Model;
 
 class Question extends Model
 {
     public function question(){
-        return $this->hasMany('App\Question');
+        return $this->hasMany('Jobify\Question');
     }
 }
